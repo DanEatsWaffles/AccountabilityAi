@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		655D1D012D64EF510099D928 /* secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 655D1D002D64EF510099D928 /* secrets.xcconfig */; };
+		65FE29412D5E43BC0055764B /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 65FE29402D5E43BC0055764B /* GRDB */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		65D932492D39E19200CA960D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		655D1D002D64EF510099D928 /* secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = secrets.xcconfig; sourceTree = "<group>"; };
 		65D932362D39E19000CA960D /* AcountabilityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcountabilityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D932482D39E19200CA960D /* AcountabilityAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcountabilityAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D932522D39E19200CA960D /* AcountabilityAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcountabilityAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FE29412D5E43BC0055764B /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +82,7 @@
 		65D9322D2D39E19000CA960D = {
 			isa = PBXGroup;
 			children = (
+				655D1D002D64EF510099D928 /* secrets.xcconfig */,
 				65D932382D39E19000CA960D /* AcountabilityApp */,
 				65D9324B2D39E19200CA960D /* AcountabilityAppTests */,
 				65D932552D39E19200CA960D /* AcountabilityAppUITests */,
@@ -112,6 +120,7 @@
 			);
 			name = AcountabilityApp;
 			packageProductDependencies = (
+				65FE29402D5E43BC0055764B /* GRDB */,
 			);
 			productName = AcountabilityApp;
 			productReference = 65D932362D39E19000CA960D /* AcountabilityApp.app */;
@@ -195,6 +204,9 @@
 			);
 			mainGroup = 65D9322D2D39E19000CA960D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				65FE293F2D5E43BC0055764B /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 65D932372D39E19000CA960D /* Products */;
 			projectDirPath = "";
@@ -212,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655D1D012D64EF510099D928 /* secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +571,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65FE293F2D5E43BC0055764B /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65FE29402D5E43BC0055764B /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65FE293F2D5E43BC0055764B /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65D9322E2D39E19000CA960D /* Project object */;
 }
